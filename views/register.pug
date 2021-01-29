@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    section.about-page.full-grid.pd1
+        != messages('message', locals)
+        if errors 
+            each error, i in errors
+                div(class="alert alert-danger") #{error.msg}
+        form.flex.flex-direction-col(method='POST' action="/register")  
+            .from__group
+            input#Name.form__input(type='text' placeholder='name' name='name')
+            label.form__label(for='author') Name
+            .from__group
+            input#email.form__input(type='email' name='email' placeholder='email')
+            label.form__label(for='title') Email
+            .from__group
+            input#Name.form__input(type='password' name='password' placeholder='password')
+            label.form__label(for='pw') password
+            .from__group
+            input#Name.form__input(type='password' name='confirmPassword' placeholder='confirm password')
+            label.form__label(for='pw2') Confirm password
+            button.btn--pulse.btn--pulse--green.m-r-a(type='submit') Sign up
+

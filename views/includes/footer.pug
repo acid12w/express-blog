@@ -1,0 +1,55 @@
+footer.footer
+  .footer__left
+    h4.h4.h4--light.mb-x1  Explore our Site
+    .footer__left--link
+      a(href='index.html') Home
+      a(href='about.html') About
+      a(href='blog-page.html') Blog
+  .footer-center.t-a
+    a(href=' #')
+      img.footer-img.js--scrol-to-1(src='/img/logo.png' alt='Logo')
+    h4.h4.h4--light.mb-1x Valrie Grant Website
+  .footer-right.t-a
+    h4.h4.h4--light.mb-x1 Follow Valrie @
+    .social-box
+      svg.social-box__icon
+        a(href='https://www.linkedin.com/in/valriegrant?trk=author_mini-profile_title')
+          use(xlink:href='img/sprite.svg#icon-linkedin2')
+      svg.social-box__icon
+        a(href='https://twitter.com/Valrie_Grant?s=09')
+          use(xlink:href='img/sprite.svg#icon-twitter')
+      svg.social-box__icon
+        a(href='https://www.instagram.com/valrie__grant/')
+          use(xlink:href='img/sprite.svg#icon-instagram')
+#popup.popup.center-grid
+  .popup__content.pd5
+    a.popup__close(href='#section-tours') &times;
+    form.form.vertical-form(data-success='Thanks for your submission, we will be in touch shortly.' data-error='Please fill all fields correctly.' method='POST' netlify='')
+      .from__group
+        input#Name.form__input(type='text' placeholder='Name' name='Name' required='')
+        label.form__label(for='Name') Name
+      .from__group
+        input#email.form__input(type='email' name='email' placeholder='email' required='')
+        label.form__label(for='email') Email address
+      .from__group
+        textarea.form__input--message(name='message' rows='4' placeholder='Message')
+      button.form--btn.form--btn-primary Subscribe
+      
+script(src='/js/jquery.min.js')
+script(src='/js/jquery.waypoints.min.js')
+script(src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin")
+script(src="https://unpkg.com/swiper/swiper-bundle.js")
+script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+script(src='/js/lightbox.min.js')
+script(src='js/parallax.js')
+script(src='/js/script.js')
+script(src='/js/scripts.js')  
+script.
+          tinymce.init({
+          selector: '#mytextarea'
+      });
+
+
+
+
+  

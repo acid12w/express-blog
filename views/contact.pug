@@ -1,0 +1,28 @@
+extends layout.pug
+
+block content
+    body.about-container 
+        section.about-page-header.full-grid.background-image5
+            h2.h2.h2--light.h2--U.ml-lg.js--section-features
+        section.full-grid.pd5
+            h3.h3.t-a.mb-x4 Let's Connect 
+            p.px2.t-a
+                | Please complete the following information or email me directly at 
+                strong info@valriegrant.com
+                |  to schedule your free consultancy. Thank you!
+        section.center-grid.pd15
+            form.form(data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly." method="POST" netlify="")
+                .from__group
+                input#Name.form__input(type="text" placeholder="Name" name="Name" required="")
+                label.form__label(for="Name") Name
+                .from__group
+                input#email.form__input(type="email" name="email" placeholder="email" required="")
+                label.form__label(for="email") Email address
+                .from__group2.from__2-in-row
+                input#Company.form__input(type="text" placeholder="Company" name="Company" required="")
+                label.form__label(for="Name") Company
+                input.form__input(type="number" placeholder="Phone Number" name="Phone Number" id="Phone Number" required="")
+                label.form__label(for="Name") Phone Number
+                .from__group
+                textarea.form__input--message(name="message" rows="4" placeholder="Message")
+                button.form--btn.form--btn-primary Subscribe

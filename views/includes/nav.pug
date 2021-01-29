@@ -1,0 +1,33 @@
+
+.navigation.nav-trans
+    input#navi-toggle.navigation__checkbox(type='checkbox')
+    label.navigation__button(for='navi-toggle')
+        span.navigation__icon &nbsp;
+    .navigation__background &nbsp;
+    a(href='/')
+        img.header__logo1(src='/img/logo.png' alt='Logo')
+    nav.navigation__nav
+        a(href='/about')
+        img.header__logo.animate__animated.animate__bounce(src='/img/logo.png' alt='Logo')
+        a(href='/blog')
+        img.header__logo-dark(src='/img/logo-dark.png' alt='Logo')
+        ul.navigation__list
+            li.navigation__item.mr-x05
+                a.navigation__link(href='/') Home
+            li.navigation__item.mr-x05 
+                a.navigation__link(href='/about') about
+            li.navigation__item.mr-x05
+                a.navigation__link(href='/contact') contact
+            li.navigation__item.mr-x05
+                a.navigation__link(href='/blog') blog
+            if user
+                li.navigation__item
+                    button.btn-normal
+                        a.anchor-white(href= '/user/login') LOGOT 
+            else  
+                li.navigation__item 
+                    button.btn-normal
+                        a.anchor-white(href= '/user/login') LOGIN
+                
+
+    

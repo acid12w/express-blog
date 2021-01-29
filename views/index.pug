@@ -1,0 +1,323 @@
+extends layout.pug
+
+block content
+  body.container
+    section.full-grid
+      // Slider main container
+      .swiper-container
+        // Additional required wrapper
+        .swiper-wrapper
+          // Slides
+          .swiper-slide.story__pictures.background-image6.flex.center-header
+            div
+              .t-a
+                h1.h1.mb-x2
+                  | Dream. Believe. Achieve
+                button.btn--pulse.btn--pulse--green.m-r-a.js--scrol-to-1 Start exploring
+          .swiper-slide.story__pictures.background-image7.flex.center-header
+            div
+              .t-a
+                h1.h1.mb-x2
+                  | Be a Force for Good
+                  br
+                  strong in the Crisis!
+                p.px2-white.mb-x2.t-a
+                  | Donate a GeO Tablet to a child in need
+                  | Help children in underserved communities 
+                  br
+                  | to keep up with their lessons online during the COVID-19 Pandemic.
+                button.btn--pulse.btn--pulse--green.m-r-a.js--scrol-to-1
+                  a.unstyle-link-w(href='https://edutechaid.com/') Learn More
+          .swiper-slide.story__pictures.background-image.flex.center-header
+            div
+              .t-a
+                h1.h1.mb-x2
+                  strong Marlie Technolgy Park
+                button.btn--pulse.btn--pulse--green.m-r-a
+                  a.unstyle-link-w(href='https://www.mtpja.com') Learn More
+                
+        // If we need pagination
+        .swiper-pagination
+        // If we need navigation buttons
+        .swiper-button-prev
+        .swiper-button-next
+    
+      
+
+  section.full-grid.notification.modal_strip
+    i.ti-announcement.icon.icon-sm.pull-left.color-primary.icon
+    h5.h5
+      | Want to enhance your business with GIS, schedule a free 15 minutes consultation with Valrie!
+    button.btn-normal
+      a.anchor-white(href='/contact') schedule  a consultation
+    a.notification__close.remove_modal &times;
+  section.about.js--section-features
+  
+    .about_header
+      h3.h3 About Me
+    .text-box.px1
+      p.justify.mb-x2
+        | Hi, I&rsquo;m Valrie and my main business is GeoTechVision which began in 2008 in Kingston , Jamaica . Today,
+        | the company is an award winning company having received numerous, national regional and international
+        | awards. I also lead several other companies including the Marlie Technology Park Ltd. which is my latest
+        | venture.
+        br
+        |                 I believe in living a great story and I try to live my best live every single day! Family, spirituality
+        |                 and a healthy lifestyle are priorities in my life. Technology and Entrepreneurship are my passion.
+        span.justify.active.about-text
+          | The passion for entrepreneurship feeds my desire to contribute
+          | to a culture of entrepreneurship and to do
+          | all I can to assist entrepreneurs as they build high growth, vibrant, sustainable businesses that
+          | will
+          | contribute to the growth and development of our economy. I have a vision of innovative
+          | entrepreneurship
+          | that focuses on new methods, ideas and business models that challenges the status quo and solves big
+          | local, regional and global problems, thus creating economic and social value.
+          br
+          |                     I got started in GIS purely by accident but I have loved every bit of it and have spent close to 20
+          |                     years in the geospatial industry. I like to keep busy and
+          |                     so am very involved in the geospatial industry and the world of entrepreneurship.
+      button.btn-inline.btn-inline-primary.text-reveal
+        | Show all 
+        span &darr;
+      // end of row
+    // end of container
+
+  .story__pictures.background-image-standard
+  .story__content.justify.r5
+    h3.h3.mb-x3.js--section-1 Expertise
+    p.skills-text.px1.mb-x2
+      | Valrie is a certified GIS professional with close to 20 years of experience
+      | in Geospatial Sciences and over 10 years&rsquo; experience as an entrepreneur.
+    .progress-bars.mb-x2
+      h6.h6.mb-x1 Persistence
+      .progress-bar.mb-x2
+        h6.h6
+          span.perc-1 99% 
+        .holder-bar
+          .progress-bar-1(data-progress='70')
+      // end of row
+      h6.h6.mb-x1 Passion
+      .progress-bar.mb-x2
+        span.perc-2 90% 
+        .holder-bar
+          .progress-bar-2(data-progress='70')
+      // end of row
+      h6.h6 Patience
+      .progress-bar.mb-x2
+        span.perc-3.mb-1x 75%
+        .holder-bar
+          .progress-bar-3(data-progress='70')
+      // end of row
+    // end of progress bar
+    button.btn--pulse.btn--pulse--green.js--wp-4
+      a.anchor-white(href='/about') Proffessional Bio
+    // end of container
+
+    
+  section.awards.pd1.center-grid
+    h3.h3.mb-x4.t-a Awards
+    .award
+      .award-items.align-e.p-r-b
+        ul
+          li
+            a(target='blank' href='https://www.vitalvoices.org/people/valrie-grant/')  The 2020 WE Empower UN SDG Challenge Award
+      .award-items.align-s.p-l-b.border-left
+        span.award-items-right 2020 - 2021
+      .award-items.align-e.p-r-b
+        span.award-items-left 2018 - 2019
+      .award-items.align-s.p-l-b.border-left
+        ul
+          li SBB, Guyana Chairperson&rsquo;s Special Award (2019)
+      .award-items.align-e.p-r-b
+        ul
+          li
+            a(target='blank' href='https://learnfestcaribbean.org/speakers/v-grant/')
+            | The Leadercast Kingston/ JCC Leader worth following award
+          li ROSA distinguished Alumni Award
+      .award-items.align-s.border-left.p-l-b.row-3
+        span.award-items-right 2017 - 2018
+      .award-items.align-e.p-r-b
+        span.award-items-left 2015-2016
+      .award-items.align-s.p-l-b.border-left
+        ul
+          li
+            a(target='blank' href='https://discovermni.com/tag/valrie-grant/') The Commonwealth Woman Entrepreneur of the Year 2015
+          li TIC Trailblazer Award, 2015
+          li The GCCI Young Business Executive Award (2016).
+      .award-items.align-e.p-r-b
+        ul
+          li Business Excellence Forum (BEF) 2014 Female Entrepreneur of the Year
+          li
+            a(target='blank' href='https://jamaicachamber.org.jm/jcc-33rd-annual-awards-ceremony/') Jamaica Chamber of Commerce (JCC) Young Entrepreneur of the Year 2014.
+      .award-items.align-s.border-left.p-l-b.row-7
+        span.award-items-right 2013 - 2014
+      .award-items.align-e.p-r-b
+        span.award-items-left 2012 - 2013
+      .award-items.align-s.p-l-b.border-left
+        ul
+          li The Jamaica GIS Entrepreneur Award
+          li The URISA Caribbean Chapter Leadership Award
+          li
+            a(target='blank' href='https://www.jbdc.net/index.php/blog-categories/blog-vivamus-congue-turpis-in-augue/152-valrie-grant-geotechvision-enterprises-ltd-ncb-nation-builder-award-women-in-business-2013-winner') The prestigious National Commercial Bank&rsquo;s &ldquo;Women in Business&rdquo; Award
+          li  for 2013 in Jamaica.
+      .award-items.align-e.p-r-b
+        ul
+          li University of West Indies (UWI) Premi&egrave;re Leadership Award (2000)
+      .award-items.align-s.border-left.p-l-b.row-11
+        span.award-items-right 2003 - 2004
+      // end of row
+    // end of container
+  section.education.pd1.center-grid
+    h3.h3.mb-x4.t-a Education
+    .award
+      .award-items.align-e.p-r-b
+        span.award-items-left Dip. In Entrepreneurship - 2016
+      .award-items.align-s.p-l-b.border-left
+        ul
+          li Heart Trust NTA- Vocational Training Development Institute
+      .award-items.align-e.p-r-b
+        ul
+          li Manchester Metropolitan University, Chester Street, Manchester, UK
+      .award-items.align-s.border-left.p-l-b.row-3
+        span.award-items-right MSc. GIS and Environment - 2006
+      .award-items.align-e.p-r-b
+        span.award-items-left PGDip. In GIS - 2003-2005
+      .award-items.align-s.p-l-b.border-left
+        ul
+          li Manchester Metropolitan University, Chester Street, Manchester, UK
+      .award-items.align-e.p-r-b
+        ul
+          li University of the West Indies, Mona ,Jamaica
+      .award-items.align-s.border-left.p-l-b.row-7
+        span.award-items-right BSc. Geology - 1997-2001
+      .award-items.align-e.p-r-b
+        span.award-items-left Pre-University Programme - 1996
+      .award-items.align-s.p-l-b.border-left
+        ul
+          li Montego Bay Community College
+      .award-items.align-e.p-r-b
+        ul
+          li  Rusea&rsquo;s High School
+      .award-items.align-s.border-left.p-l-b.row-11
+        .award-items-right
+          span High School Diploma
+          span
+            | (CXC &amp; GCE subjects) -
+            | 1990-1995
+        // end of row
+      // end of container
+  section.slider-box.pd1-m
+    .slider-box-holder.t-a
+      h3.h3.h3--underline.mb-x3.js--section-2 My Initiatives 
+      .text-slider.slider-paging-controls.position-r
+          h5.h5.mb-x3
+            | Help children in underserved 
+            br
+            | communities to keep up with their lessons online during the COVID-19 Pandemic. Every
+            | donation helps a child in need.
+            img.image-md(alt='Author' src='/img/logo-2.png')
+            h5.h5
+              a.anchor-black(href='https://edutechaid.com/')
+                strong
+                  | Learn
+                  | More
+  .story__pictures.background-image1
+  .story__content.pd1.background
+    h3.h3.mb-x2 Orator
+    h4.h4.mb-x1
+      | Valrie is a dynamic and experienced facilitator, trainer and Conference
+      | Speaker
+    h5.h5.mb-x3
+      | With her wealth of experience in public speaking
+      | Valrie often speaks at national, regional and international events.
+      | To request Valrie Grant for speaking engagements or workshops email:info@valriegrant.com or call: (876)
+      | 634-6813. or (305) 749-5237
+    button.btn-inline.btn-inline-primary
+      a.anchor-primary(href='#popup')
+        | Book
+        | Now
+        span &darr;
+  section.full-grid.pd1-m
+      
+    .background-image-holder
+      img.background-image(alt='image' src='')
+    .t-a
+      // end of row
+      .mb-x4
+        div
+          h3.h3.h3--underline Inspirational Quotes
+      // end of row
+      // Slider main container
+      .swiper-container
+        // Additional required wrapper
+        .swiper-wrapper
+          // Slides
+          .swiper-slide
+            li
+                p.px2.px5.mb-x2
+                  | &ldquo;I learned that courage was not the absence of fear, but the
+                  | triumph over it.&rdquo;
+                .quote-author
+                  h5.h5 Nelson Mandela
+                  h5.h5 Activist
+          .swiper-slide
+            li
+                p.px2.px5.mb-x2
+                  | I&rsquo;ve had quite the the journey as an entrepreneur but I have
+                  | enjoyed every minute of it- challenges and all. My determination is simply to live a
+                  | great story!
+                .quote-author
+                  h5.h5 Valrie Grant
+                  h5.h5 Woman Entrepreneur
+          .swiper-slide
+            li
+                p.px2.px5.mb-x2 &ldquo;If you really believe in it&mldr; do it, don&apos;t be a afraid&rdquo;
+                .quote-author
+                  h5.h5 Valrie Grant
+                  h5.h5 Woman Entrepreneur
+        // If we need pagination
+        .swiper-pagination
+        // If we need navigation buttons
+        .swiper-button-prev
+        .swiper-button-next
+        // If we need scrollbar
+        .swiper-scrollbar
+  section.contact--form
+    h3#name-feedback.h3.h3--light.pb-md.t-a
+      | Subscribe to my blog.
+    form#form.form.horizontal-form
+      .from__group
+        input#name.form__input(type='text' placeholder='name' name='name' required='')
+        label.form__label(for='name') Name
+      .from__group
+        input#email.form__input(type='email' name='email' placeholder='email' required='')
+        label.form__label(for='email') Email address
+      button.form--btn.form--btn-dark.height-72(type='submit' value='Submit') Subscribe
+  section.full-grid.pd5
+    h3.h3.t-a.mb-x2.h3--underline My Gallery
+  section.gallery
+    figure.gallery__item.gallery__item--1
+      a(href='/img/home-1-9.jpg' data-lightbox='true')
+        img.gallery__img(src='/img/home-1-9.jpg' alt='gallery image 1')
+    figure.gallery__item.gallery__item--2
+      a(href='/img/home-1-3-min.jpg' data-lightbox='true')
+        img.gallery__img(src='/img/home-1-3-min.jpg' alt='gallery image 1')
+    figure.gallery__item.gallery__item--5
+      a(href='/img/home-1-7.jpg' data-lightbox='true')
+        img.gallery__img(src='/img/home-1-7.jpg' alt='gallery image 1')
+    figure.gallery__item.gallery__item--6
+      a(href='/img/home-1-4-min.jpg' data-lightbox='true')
+        img.gallery__img(src='/img/home-1-4-min.jpg' alt='gallery image 1')
+    figure.gallery__item.gallery__item--8
+      a(href='/img/home-1-8.jpg' data-lightbox='true')
+        img.gallery__img(src='/img/home-1-8.jpg' alt='gallery image 1')
+    figure.gallery__item.gallery__item--9
+      a(href='/img/home-1-6.jpg' data-lightbox='true')
+        img.gallery__img(src='/img/home-1-6.jpg' alt='gallery image 1')
+    figure.gallery__item.gallery__item--10
+      a(href='/img/home-1-5.jpg' data-lightbox='true')
+        img.gallery__img(src='/img/home-1-5.jpg' alt='gallery image 1')
+    figure.gallery__item.gallery__item--11
+      a(href='/img/home-1-2.jpg' data-lightbox='true')
+        img.gallery__img(src='/img/home-1-2.jpg' alt='gallery image 1')

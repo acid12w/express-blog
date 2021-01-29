@@ -1,0 +1,39 @@
+extends layout.pug
+
+block content
+    body.about-container
+        section.about-page-header.full-grid.background-image3
+            h2.h2.h2--light.h2--U.ml-lg
+        .side-bar.grid-start.pd-top10.px2
+            h4.h4.mb-x2.line Latest posts
+            each val in results
+                h4
+                a.h5.unstyle-link(href=`/blog/${val.id}`)= val.title
+            p.px18
+        section.about-page.pd15.grid-col-start-2.flex.flex-direction-col
+            != messages('message', locals)
+            if errors 
+                each error, i in errors
+                    div(class="alert alert-danger") #{error.msg}
+            if user
+                button.btn--pulse.btn--pulse--green.js--wp-4.m-l-a.mb-x4
+                    a.anchor-white(href= '/new') Create Article &#x2b; 
+            each val in results  
+                    .mb-x4
+                        h3.h3.mb-x1= val.title
+                        div.mb-x2.flex
+                            p.px1.mr-x1 #{val.author} &#124; 
+                            p.px1 #{val.date}
+                        .about-page--text-box.justify
+                        p.px18!= val.shortDescription(val.body, 400)
+                        // end of row
+                        button.btn-inline.btn-inline-primary
+                        a.anchor-primary.mr-x1.px18(href=`/blog/${val.id}`)
+                            | Read more
+                            span  &#124; 
+                        if user
+                            a.anchor-primary.mr-x1.px18(href=`/blog/${val.id}/delete`) DELETE &#124;  
+                            a.anchor-primary.mr-x1.px18(href=`/blog/${val.id}/edit`) Edit 
+                        
+                        // end of section
+                    // end of container

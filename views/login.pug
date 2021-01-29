@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    body.about-container
+        section.about-page-header.full-grid.background-image3
+            h2.h2.h2--light.h2--U.ml-lg login
+        section.about-page.full-grid.pd15
+                != messages('message', locals)
+                if errors 
+                    each error, i in errors
+                        div(class="alert alert-danger") #{error.msg}
+                form.flex.flex-direction-col(method='POST' action="/user/login")  
+                    .from__group
+                    input#email.form__input(type='email' name='email' placeholder='email')
+                    label.form__label(for='title') Email
+                    .from__group
+                    input#Name.form__input(type='password' name='password' placeholder='password')
+                    label.form__label(for='pw') password
+                    button.btn--pulse.btn--pulse--green.m-r-a(type='submit') Sign in

@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+    body.about-container
+        section.about-page-header.full-grid.background-image3
+        section.full-grid.pd15
+         .t-a
+             h2.h2.mb-x1 Are you sure want to delete:
+             h3.h3.mb-x2= '"' + result.title  + '"'
+             form(method='POST' action="/blog/"+ id +"/delete") 
+                button.btn--pulse.btn--pulse--green.m-r-a.mb-x2(type='submit') DELETE &#10006;
+             h4.h4 
+                a(href="/blog") No! Take me back! 
+        
+  
+             

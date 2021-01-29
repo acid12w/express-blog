@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+ body.about-container
+    section.about-page-header.full-grid.background-image3
+        h2.h2.h2--light.h2--U.ml-lg Articles
+    section.about-page.full-grid.pd15
+        a.anchor-primary.arrow-right.px4(href='/blog') &#x279C;
+        .t-a.mb-x4
+            h3.h3= result.title
+        .about-page--text-box.px18.justify.line-height-25 
+            p!= result.body
+        
+    // end of container    

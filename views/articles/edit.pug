@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+  body.about-container
+    section.about-page-header.full-grid.background-image3
+      h2.h2.h2--light.h2--U.ml-lg Update article
+    section.about-page.full-grid.pd15
+      form.form.vertical-form(method='POST' action="/blog/"+ id +"/edit")  
+        include form
+

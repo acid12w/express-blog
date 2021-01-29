@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+  body.about-container
+    section.about-page-header.full-grid.background-image3
+      h2.h2.h2--light.h2--U.ml-lg Create a new article
+    section.about-page.full-grid.pd15
+      != messages('message', locals)
+      if errors 
+          each error, i in errors
+              div(class="alert alert-danger") #{error.msg}
+      form.flex.flex-direction-col.mb-x2(method='POST' action='/new')  
+        include form
+
