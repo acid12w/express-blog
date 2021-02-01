@@ -4,6 +4,15 @@ const User = require('../models/user');
 const passport = require('passport');
 const { forwardAuthenticated } = require('../config/auth');
 
+function asyncHandler(cb){
+  return async (req,res,next)=> {
+    try {
+      await cb(req,res,next);
+    } catch(err){
+      res.render('error', {error:err});
+    }
+  }
+}
   
 //Get /login
 router.get('/login', forwardAuthenticated, function(req, res, next){

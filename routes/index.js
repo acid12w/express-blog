@@ -3,7 +3,15 @@ const router = express.Router();
 const ArticleModel = require('../models/articles');
 const moment = require('moment');
 
-
+function asyncHandler(cb){
+  return async (req,res,next)=> {
+    try {
+      await cb(req,res,next);
+    } catch(err){
+      res.render('error', {error:err});
+    }
+  }
+}
 
 router.get('/', (req, res) => {
   res.render('index')
@@ -23,7 +31,7 @@ router.get('/new', (req, res) => {
 });
 
 // POST /New Article
-router.post('/new', async(req, res, next) => { 
+router.post('/new',  asyncHandler(async(req, res, next) => { 
   req.checkBody('title', 'Title is required').notEmpty();
   req.checkBody('author', 'Author is required').notEmpty();
   req.checkBody('article', 'Articles is required').notEmpty();
@@ -61,7 +69,7 @@ router.post('/new', async(req, res, next) => {
         next(err) 
       }
     }
-});
+}));
 
 
 module.exports = router; 
